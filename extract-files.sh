@@ -29,6 +29,7 @@ if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
 fi
+echo "Helper: "$HELPER
 . "$HELPER"
 
 if [ $# -eq 0 ]; then
@@ -48,6 +49,8 @@ else
 fi
 
 export DEVICE_COMMON=jf-common
+
+echo "Herrie DEVICE: "$DEVICE
 
 # Initialize the helper for common device
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
