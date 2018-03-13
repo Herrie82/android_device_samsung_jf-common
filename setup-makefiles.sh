@@ -32,6 +32,9 @@ fi
 . "$HELPER"
 
 # Initialize the helper for common device
+echo "Device Common: "$DEVICE_COMMON
+echo "Vendor: "$VENDOR
+echo "CM Root: "$CM_ROOT
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
 
 # Copyright headers and common guards
