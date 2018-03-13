@@ -29,6 +29,8 @@ if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
 fi
+
+echo "Herrie Helper2: "$HELPER
 . "$HELPER"
 
 # Initialize the helper for common device
