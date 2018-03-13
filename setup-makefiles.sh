@@ -35,6 +35,7 @@ echo "Herrie Helper2: "$HELPER
 
 # Initialize the helper for common device
 echo "Device Common: "$DEVICE_COMMON
+echo "Device: "$DEVICE
 echo "Vendor: "$VENDOR
 echo "CM Root: "$CM_ROOT
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
